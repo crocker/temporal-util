@@ -15,7 +15,7 @@ case class LocalDateRange(
     )
   }
 
-  def getDates: Seq[LocalDate] = {
+  def toDates: Seq[LocalDate] = {
     DateUtil.getDatesBetween(this.from, this.to)
   }
 }

@@ -23,7 +23,7 @@ class TimeUtilTest extends Specification {
 
       val range = LocalDateRange(dates.head, dates.last)
 
-      range.getDates shouldEqual dates
+      range.toDates shouldEqual dates
     }
 
   }
