@@ -1,0 +1,12 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - sbt clean
+  build:
+    commands:
+      - sbt compile
+  post_build:
+    commands:
+      - sbt release
