@@ -2,7 +2,7 @@ name := "temporal-util"
 
 organization := "com.logicstack.util"
 
-version := "0.0.5-SNAPSHOT"
+version := "0.0.5"
 
 scalaVersion := "2.11.11"
 
