@@ -19,16 +19,15 @@ resolvers ++= Seq(
   Resolver.defaultLocal,
   Resolver.sonatypeRepo("releases"),
   Resolver.sonatypeRepo("snapshots"),
-  "LogicStack Releases" at s"$artifactory/libs-release-local",
-  "LogicStack Snapshots" at s"$artifactory/libs-snapshot-local"
+  "Artifactory" at s"${artifactory}/lib-local/"
 )
 
 publishTo := {
   if (isSnapshot.value) {
-    Some("snapshots" at s"$artifactory/libs-snapshot-local")
+    Some("Artifactory Realm" at s"${artifactory}/lib-local;build.timestamp=" + new java.util.Date().getTime)
   }
   else {
-    Some("releases" at s"$artifactory/libs-release-local")
+    Some("Artifactory Realm" at s"${artifactory}/lib-local")
   }
 }
 
