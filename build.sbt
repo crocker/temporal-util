@@ -2,13 +2,13 @@ name := "temporal-util"
 
 organization := "com.logicstack.util"
 
-version := "0.0.6"
+version := "0.0.7"
 
-scalaVersion := "2.11.11"
+scalaVersion := "2.12.5"
 
 libraryDependencies ++= Seq(
   //testing
-  "org.specs2" %% "specs2-core" % "3.7.2" % "test"
+  "org.specs2" %% "specs2-core" % "4.0.3" % "test"
 )
 
 // publish settings
