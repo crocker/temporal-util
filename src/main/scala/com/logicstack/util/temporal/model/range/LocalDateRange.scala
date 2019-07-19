@@ -1,6 +1,6 @@
-package com.logicstack.util.temporal.model
+package com.logicstack.util.temporal.model.range
 
-import java.time.{LocalDate, LocalTime}
+import java.time.LocalDate
 
 import com.logicstack.util.temporal.{DateUtil, TimeUtil}
 

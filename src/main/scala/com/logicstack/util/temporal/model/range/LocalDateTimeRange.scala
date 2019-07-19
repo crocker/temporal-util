@@ -1,7 +1,6 @@
-package com.logicstack.util.temporal.model
+package com.logicstack.util.temporal.model.range
 
 import java.time.LocalDateTime
-
 
 case class LocalDateTimeRange(
   from: LocalDateTime,

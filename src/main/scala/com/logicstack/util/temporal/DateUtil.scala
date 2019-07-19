@@ -5,7 +5,7 @@ import java.time.temporal.ChronoUnit.DAYS
 import java.time.temporal.WeekFields
 import java.util.Locale
 
-import com.logicstack.util.temporal.model.LocalDateRange
+import com.logicstack.util.temporal.model.range.LocalDateRange
 
 object DateUtil {
   private val weekField = WeekFields.of(Locale.getDefault).dayOfWeek()

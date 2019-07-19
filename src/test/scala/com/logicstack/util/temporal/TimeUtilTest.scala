@@ -3,7 +3,7 @@ package com.logicstack.util.temporal
 import java.time.LocalDate
 import java.time.temporal.{ChronoUnit, TemporalUnit}
 
-import com.logicstack.util.temporal.model.LocalDateRange
+import com.logicstack.util.temporal.model.range.LocalDateRange
 import org.specs2.mutable.Specification
 
 class TimeUtilTest extends Specification {

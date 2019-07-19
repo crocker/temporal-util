@@ -2,7 +2,7 @@ name := "temporal-util"
 
 organization := "com.logicstack.util"
 
-version := "0.0.7"
+version := "0.0.8-SNAPSHOT"
 
 scalaVersion := "2.12.5"
 
@@ -18,17 +18,5 @@ resolvers ++= Seq(
   Resolver.mavenLocal,
   Resolver.defaultLocal,
   Resolver.sonatypeRepo("releases"),
-  Resolver.sonatypeRepo("snapshots"),
-  "Artifactory" at s"${artifactory}/lib-local/"
+  Resolver.sonatypeRepo("snapshots")
 )
-
-publishTo := {
-  if (isSnapshot.value) {
-    Some("Artifactory Realm" at s"${artifactory}/lib-local;build.timestamp=" + new java.util.Date().getTime)
-  }
-  else {
-    Some("Artifactory Realm" at s"${artifactory}/lib-local")
-  }
-}
-
-credentials += Credentials("Artifactory Realm", "logicstack.jfrog.io", "admin", "AP7GNvG4SqsADXdfxo3yGg9bTDy")
