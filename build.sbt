@@ -7,12 +7,9 @@ version := "0.0.8-SNAPSHOT"
 scalaVersion := "2.12.5"
 
 libraryDependencies ++= Seq(
-  //testing
+  // testing
   "org.specs2" %% "specs2-core" % "4.0.3" % "test"
 )
-
-// publish settings
-val artifactory = "https://logicstack.jfrog.io/logicstack"
 
 resolvers ++= Seq(
   Resolver.mavenLocal,
